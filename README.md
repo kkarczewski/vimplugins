@@ -1,0 +1,2 @@
+# vimplugins
+autoinstall
