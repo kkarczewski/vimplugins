@@ -53,6 +53,7 @@ echo 'set list lcs=tab:\|\ ' >> ~/.vimrc
 echo 'set mouse=a' >> ~/.vimrc
 echo 'let g:NERDTreeMouseMode=3' >> ~/.vimrc
 echo 'let g:NERDTreeMinimalUI=1' >> ~/.vimrc
+echo 'let NERDTreeShowHidden=1' >> ~/.vimrc
 echo 'let g:NERDTreeDirArrow=1' >> ~/.vimrc
 echo 'let g:indentLine_enabled=3' >> ~/.vimrc
 echo '"let g:indentLine_char=\'c\'' >> ~/.vimrc
