@@ -5,6 +5,7 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vi
 cd .vim/bundle/ && git clone https://github.com/nvie/vim-flake8
 echo 'set nocompatible              " be iMproved, required' >> ~/.vimrc
 echo 'filetype off                  " required' >> ~/.vimrc
+echo 'set number' >> ~/.vimrc
 echo '' >> ~/.vimrc
 echo '" set the runtime path to include Vundle and initialize' >> ~/.vimrc
 echo 'set rtp+=~/.vim/bundle/Vundle.vim' >> ~/.vimrc
