@@ -1,8 +1,12 @@
+yum -y install https://centos7.iuscommunity.org/ius-release.rpm
+yum -y install python36u python36u-pip git
 python3.6 -m pip install jedi
 python3.6 -m pip install flake8
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 mkdir -p ~/.vim/autoload ~/.vim/bundle && curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 cd .vim/bundle/ && git clone https://github.com/nvie/vim-flake8
+echo 'set encoding=utf-8' >> ~/.vimrc
+echo 'scriptencoding utf-8' >> ~/.vimrc
 echo 'set nocompatible              " be iMproved, required' >> ~/.vimrc
 echo 'filetype off                  " required' >> ~/.vimrc
 echo 'set number' >> ~/.vimrc
@@ -47,9 +51,8 @@ echo 'autocmd StdinReadPre * let s:std_in=1' >> ~/.vimrc
 echo 'autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif' >> ~/.vimrc
 echo 'autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe "NERDTree" argv()[0] | wincmd p | ene | endif' >> ~/.vimrc
 echo 'autocmd Filetype python setlocal ts=3 sts=3 sw=3' >> ~/.vimrc
-echo '' >> ~/.vimrc
 echo 'set list' >> ~/.vimrc
-echo 'set listchars=tab:\ \ ,trail:.,extends:>,procedes:<' >> ~/.vimrc
+echo 'set listchars=tab:\|\' >> ~/.vimrc
 echo 'set list lcs=tab:\|\ ' >> ~/.vimrc
 echo 'set mouse=a' >> ~/.vimrc
 echo 'let g:NERDTreeMouseMode=3' >> ~/.vimrc
@@ -61,4 +64,3 @@ echo '"let g:indentLine_char=\'c\'' >> ~/.vimrc
 echo 'let g:indentLine_color_term=239' >> ~/.vimrc
 echo 'let g:indentLine_concealcursor=\'inc\'' >> ~/.vimrc
 echo 'let g:indentLine_conceallevel=1' >> ~/.vimrc
-
