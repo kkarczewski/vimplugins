@@ -60,7 +60,6 @@ echo 'let g:NERDTreeMinimalUI=1' >> ~/.vimrc
 echo 'let NERDTreeShowHidden=1' >> ~/.vimrc
 echo 'let g:NERDTreeDirArrow=1' >> ~/.vimrc
 echo 'let g:indentLine_enabled=3' >> ~/.vimrc
-echo '"let g:indentLine_char=\'c\'' >> ~/.vimrc
 echo 'let g:indentLine_color_term=239' >> ~/.vimrc
 echo 'let g:indentLine_concealcursor=\'inc\'' >> ~/.vimrc
 echo 'let g:indentLine_conceallevel=1' >> ~/.vimrc
